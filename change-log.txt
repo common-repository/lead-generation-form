@@ -1,0 +1,388 @@
+Lead Generation Form - 1.0.7
+
+28th October 2024
+---
+* v1.0.7
+* reCAPTCHA issue on live site (pending)
+* Form field labels copy paste HTML issues (pending)
+* Plugin version not displayed in dashboard (pending)
+* Header file label size fix in Form Generator UI (pending)
+* Double shortcode accepting double entries on submit (pending)
+* Export list date and time columns label (pending)
+
+* Add a CC email (upcoming feature)
+* Unset/remove field from admin email (upcoming feature)
+* File upload size validation (upcoming feature)
+* Delete associated file record after deleting a record (upcoming feature)
+* Plugin WordPress Block for Page and Post (upcoming feature)
+* Live Demo test though underground API (upcoming feature)
+* Reset Form Button (upcoming feature)
+* Custom CSS for Form styling (upcoming feature only in PRO)
+
+21st October 2024
+---
+* v1.0.7
+* Google reCAPTCHA disable for testing
+* Notify admin setting enabled in this version by default
+* Copy to clipboard button with shortcode while form creation (new feature added)
+* Submit Button CSS (new feature added)
+* Free version restriction message on All Captured Leads page
+* Date field accepting invalid values fixed
+* Disable date field Step attribute (fixed)
+
+15th October 2024
+---
+* v1.0.6
+* Form Submission changed to Ajax
+* Form UI issues fixed
+* Input type range filed added
+* Input field range dynamic value display fixed
+* Prevent resubmit data on page refresh, CTRL+F5, and F5 key pressed fixed
+* Color field posting value fixed
+* Form Generator tooltip and required asterisk UI fixed admin dashboard
+* Form submit message fixed
+
+10th October 2024
+---
+* v1.0.5
+* SMTP setting issue fixed
+
+4th August 2024
+---
+* v1.0.4
+* Missing sanitization, escaping and validating fixed
+* Used proper wp_json_encode function
+* Translate string with escaping esc_html_e
+* Language file update
+* File upload fixed
+* File filed preview in tabled fixed
+* Query submit message fixed
+* Multi delete leads fixed
+* A default Contact form, ready to add on your website using shortcode [WLFG id='1'].
+
+15th July 2024
+---
+* v1.0.3
+* Loading icon all captured leads
+* reCAPTCHA removed
+* Honeypot method added to protect spam bots and scripts
+* Assets library updated
+* Form generator page CSS fix
+* Prefix changes to "wlgf"
+* Lead tables records are unresponsive fix
+* Blacklist Emails and domain parameter added blacklist='abc@mail.ru, xyz@list.ru, mail.ru, list.ru' (default flag value 0)
+
+9th July 2024
+---
+* v1.0.2
+* Remove external PHPMailer support and use inbuilt core version
+* Add date and time field in records tables.
+* Import export fix
+* File preview in "All Captured Leads"
+* Custom reply to shortcode parameter 'reply_field_name' and 'reply_field_email'
+* Honeypot method added to protect Forms from Bots
+
+24st May 2024
+---
+* v1.0.0
+* Plugin Check: General error fix
+* Plugin Check: Plugin repo error fix
+* Plugin Check: Security error fix
+
+22st May 2024
+---
+* Clone and modify from error
+* Added one more sample form 'Contact Form'
+
+3rd April 2024
+---
+* Settings page reCAPTCHA and Gmail SMTP Password video link added
+
+26th March 2024
+---
+* reCAPTCHA validation error fix
+
+8th March 2024
+---
+* Custom Parameter added for make Reply to for specific fields:
+* - $lgf_AddReplyToEmail for 'Email'
+* - $lgf_AddReplyToName for 'Name'
+* Loading icon after form submission (pending)
+* Video docs link - get reCAPTCHA keies
+* Video docs link - generate SMTP Password
+* Hide form successful submission message after 5 second
+
+13th Feb 2024
+---
+* Delete all leads button (8th Feb 2024)
+* Video Docs (coming soon on official YouTube channel od webenvo)
+* Import Prebuild Forms (will make a video and add link into Import & Export Page in upcoming updates)
+* 15 Language translation (13th Feb 2024)
+* Arabic (ar) - العربية
+* Chinese (zh_CN) - 简体中文
+* Finnish (fi) - Suomi
+* French (fr_FR) - Français
+* German (de_DE) - Deutsch
+* Hindi (hi_IN) - हिन्दी
+* Hungarian (hu_HU) - Magyar
+* Italian (it_IT) - Italiano
+* Indonesian (id_ID) - Bahasa Indonesia
+* Japanese (ja) - 日本語
+* Dutch (nl_NL) - Nederlands
+* Russian (ru_RU) - Русский
+* Spanish (es_ES) - Español
+* Polish (pl_PL) - Polski
+* Portuguese (pt_PT) - Português
+
+30 Nov 2023
+---
+* More FAQ text now translation ready
+* All language files are updated.
+
+28 Nov 2023
+---
+* Image upload preview missing in tables (sanitize_file_name) - fixed
+* User message after form submission was blank - fixed
+
+Lead Generation Form Pro Features
+---
+* Dynamic Form Builder
+* Unlimited Forms Creation
+* Easy Forms Management using Create Update Delete and Clone Actions
+* Form Shortcode
+* Custom Shortcode Parameters like 'id', 'blacklist', 'reply_field_name', and 'reply_field_email'
+* Copy Form Shortcode Button
+* Simple Drag and Drop Form Builder User Interface
+* Simple Analytics Dashboard
+* Customers Query Management
+* Search And Sort Queries Records
+* Manage All Customers Leads and Data
+* Download All Customers Query as Excel Sheet or CSV File
+* From Import and Export
+* Combine Two Form Or Form Merging
+* Google reCaptcha v3
+* Honeypot Spam Bot Protection
+* Email Notification via WP Mail and SMTP
+* Notify Administrator on New Query
+* Blacklist Emails and Domains
+* Form Submit Message To Users
+* Adaptive Form Style From Active Theme
+
+
+All Field Form JSON Object
+---
+
+[
+  {
+    "type": "header",
+    "subtype": "h1",
+    "label": "Header",
+    "className": "header-class"
+  },
+  {
+    "type": "paragraph",
+    "subtype": "p",
+    "label": "Paragraph",
+    "className": "para-class"
+  },
+  {
+    "type": "text",
+    "required": true,
+    "label": "Text",
+    "description": "Text Field  Help Text",
+    "placeholder": "Text Field Placeholder",
+    "className": "form-control",
+    "name": "Text",
+    "subtype": "text",
+    "maxlength": 50
+  },
+  {
+    "type": "text",
+    "subtype": "password",
+    "required": true,
+    "label": "Password",
+    "description": "Password Field Help Text",
+    "placeholder": "Password Field Placeholder",
+    "className": "form-control",
+    "name": "Password",
+    "maxlength": 50
+  },
+  {
+    "type": "text",
+    "subtype": "email",
+    "required": true,
+    "label": "Email",
+    "description": "Email Field Help Text",
+    "placeholder": "Email Field Placeholder",
+    "className": "form-control",
+    "name": "Email",
+    "maxlength": 100
+  },
+  {
+    "type": "text",
+    "subtype": "color",
+    "required": true,
+    "label": "Color",
+    "description": "Color Field Help Text",
+    "placeholder": "Color Field PLaceholder",
+    "className": "form-control",
+    "name": "Color",
+    "maxlength": 7
+  },
+  {
+    "type": "text",
+    "subtype": "tel",
+    "required": true,
+    "label": "Telephone",
+    "description": "Telephone Field Help Text",
+    "placeholder": "Telephone Field Placeholder",
+    "className": "form-control",
+    "name": "Telephone",
+    "maxlength": 10
+  },
+  {
+    "type": "textarea",
+    "required": true,
+    "label": "Text Area",
+    "description": "Text Area Help Text",
+    "placeholder": "Text Area Placeholder",
+    "className": "form-control",
+    "name": "Text-Area",
+    "subtype": "textarea",
+    "maxlength": 150,
+    "rows": 7
+  },
+  {
+    "type": "select",
+    "required": true,
+    "label": "Select",
+    "description": "Select Help Text",
+    "placeholder": "Select Placeholder",
+    "className": "form-control",
+    "name": "Select",
+    "values": [
+      {
+        "label": "Option 1",
+        "value": "option-1",
+        "selected": true
+      },
+      {
+        "label": "Option 2",
+        "value": "option-2",
+        "selected": false
+      },
+      {
+        "label": "Option 3",
+        "value": "option-3",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "type": "radio-group",
+    "required": true,
+    "label": "Radio",
+    "description": "Radio Help Text",
+    "className": "radio-class",
+    "name": "Radio",
+    "values": [
+      {
+        "label": "Option 1",
+        "value": "option-1",
+        "selected": true
+      },
+      {
+        "label": "Option 2",
+        "value": "option-2",
+        "selected": false
+      },
+      {
+        "label": "Option 3",
+        "value": "option-3",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "type": "checkbox-group",
+    "required": true,
+    "label": "Checkbox",
+    "description": "Checkbox Help Text",
+    "className": "checkbox-class",
+    "name": "Checkbox",
+    "values": [
+      {
+        "label": "Option 1",
+        "value": "option-1",
+        "selected": true
+      },
+      {
+        "label": "Option 2",
+        "value": "option-2",
+        "selected": false
+      },
+      {
+        "label": "Option 3",
+        "value": "option-3",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "type": "date",
+    "required": true,
+    "label": "Date",
+    "description": "Date Field help Text",
+    "placeholder": "Date Field Placeholder",
+    "className": "date-class",
+    "name": "Date",
+    "subtype": "date"
+  },
+  {
+    "type": "number",
+    "required": true,
+    "label": "Number",
+    "description": "Number Help Text",
+    "placeholder": "Number Placeholder",
+    "className": "number-class",
+    "name": "Number",
+    "value": "5",
+    "subtype": "number",
+    "min": 1,
+    "max": 10,
+    "step": 1
+  },
+  {
+    "type": "number",
+    "subtype": "range",
+    "required": true,
+    "label": "Range",
+    "description": "Range Help Text",
+    "placeholder": "Range Placeholder",
+    "className": "form-control",
+    "name": "Range",
+    "value": "8600",
+    "min": 1000,
+    "max": 10000,
+    "step": 100
+  },
+  {
+    "type": "file",
+    "required": true,
+    "label": "File",
+    "description": "File Upload Help Text",
+    "placeholder": "File Upload Placeholder",
+    "className": "file-class",
+    "name": "File"
+  },
+  {
+    "type": "button",
+    "subtype": "submit",
+    "label": "Submit",
+    "className": "submit-class btn-primary btn",
+    "name": "Submit",
+    "style": "primary"
+  }
+]
+
+---

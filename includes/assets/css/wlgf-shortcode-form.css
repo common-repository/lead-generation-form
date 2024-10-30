@@ -1,0 +1,171 @@
+/* Scope all styles within .wlgf-container */
+.wlgf-container form label {
+    margin-bottom: 5px;       /* Spacing between label and input */
+}
+
+.wlgf-container input[type="text"],
+.wlgf-container input[type="email"],
+.wlgf-container input[type="password"],
+.wlgf-container input[type="number"],
+.wlgf-container input[type="date"],
+.wlgf-container input[type="tel"],
+.wlgf-container input[type="range"],
+.wlgf-container input[type="file"],
+.wlgf-container textarea,
+.wlgf-container select,
+.wlgf-container input[type="color"] {
+    width: 100%;              /* Full width for form fields (except color) */
+    padding: 10px;            /* Padding for input fields */
+    margin: 10px 0 20px 0;    /* Margin above and below fields for spacing */
+    box-sizing: border-box;   /* Ensure padding is included in width */
+    border: 1px solid #ccc;   /* Light border */
+    border-radius: 4px;       /* Rounded corners */
+    font-size: 16px;          /* Font size */
+}
+
+/* Hover and focus effects */
+.wlgf-container input[type="text"]:hover,
+.wlgf-container input[type="email"]:hover,
+.wlgf-container input[type="password"]:hover,
+.wlgf-container input[type="number"]:hover,
+.wlgf-container input[type="date"]:hover,
+.wlgf-container input[type="tel"]:hover,
+.wlgf-container input[type="range"]:hover,
+.wlgf-container input[type="file"]:hover,
+.wlgf-container textarea:hover,
+.wlgf-container select:hover,
+.wlgf-container input[type="color"]:hover {
+    border: 1px solid #888;   /* Darker border on hover */
+}
+
+.wlgf-container input[type="text"]:focus,
+.wlgf-container input[type="email"]:focus,
+.wlgf-container input[type="password"]:focus,
+.wlgf-container input[type="number"]:focus,
+.wlgf-container input[type="date"]:focus,
+.wlgf-container input[type="checkbox"]:focus,
+.wlgf-container input[type="tel"]:focus,
+.wlgf-container input[type="range"]:focus,
+.wlgf-container input[type="file"]:focus,
+.wlgf-container input[type="radio"]:focus,
+.wlgf-container textarea:focus,
+.wlgf-container select:focus,
+.wlgf-container input[type="color"]:focus {
+    outline: none;      /* Remove default focus outline */
+    border: 1px solid; /* Blue border on focus */
+}
+
+/* Styles for Color Field */
+.wlgf-container input[type="color"] {
+    padding: 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: auto;
+    inline-size: 50px;
+    block-size: 27px;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    color: buttontext;
+    margin-bottom: 20px;      /* Add spacing after color */
+    display: block;
+}
+
+/* Styles for Textarea */
+
+/* Styles for Radio and Checkbox Groups */
+.wlgf-container .wlgf-rd-group,
+.wlgf-container .wlgf-cb-group {
+    margin-bottom: 20px;      /* Add spacing after radio/checkbox groups */
+}
+
+.wlgf-container input[type="file"],
+.wlgf-container input[type="number"],
+.wlgf-container input[type="date"],
+.wlgf-container input[type="radio"],
+.wlgf-container input[type="checkbox"] {
+    width: auto;              /* Auto width for radio and checkbox */
+    margin-right: 10px;       /* Space between radio/checkbox and label */
+}
+
+/* Styles for File Upload */
+.wlgf-container input[type="date"],
+.wlgf-container input[type="number"],
+.wlgf-container input[type="file"] {
+    margin-bottom: 20px;      /* Spacing after file upload */
+    display: block;
+}
+
+/* Button Styles Start */
+.wlgf-container button,
+.wlgf-container input[type="button"],
+.wlgf-container input[type="submit"] {
+    padding: 10px 15px;            /* Button padding */
+    border: none;                  /* No border */
+    border-radius: 4px;           /* Rounded corners */
+    cursor: pointer;               /* Pointer cursor */
+    font-size: 16px;               /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.wlgf-container .btn-default {
+    background-color: #ececec;    /* Light grey */
+    color: #212529;                /* Dark text */
+}
+
+.wlgf-container .btn-primary {
+    background-color: #007bff;     /* Bootstrap blue */
+    color: white;                  /* White text */
+}
+
+.wlgf-container .btn-danger {
+    background-color: #dc3545;     /* Red */
+    color: white;                  /* White text */
+}
+
+.wlgf-container .btn-warning {
+    background-color: #ffc107;     /* Yellow */
+    color: #212529;                /* Dark text */
+}
+
+.wlgf-container .btn-success {
+    background-color: #28a745;     /* Green */
+    color: white;                  /* White text */
+}
+
+.wlgf-container .btn-info {
+    background-color: #17a2b8;     /* Light blue */
+    color: white;                  /* White text */
+}
+
+/* Hover and focus effects */
+.wlgf-container button:hover,
+.wlgf-container input[type="button"]:hover,
+.wlgf-container input[type="submit"]:hover {
+    opacity: 0.80;                 /* Slightly transparent on hover */
+}
+
+.wlgf-container button:disabled,
+.wlgf-container input[type="button"]:disabled,
+.wlgf-container input[type="submit"]:disabled {
+    background-color: #c0c0c0;      /* Light grey background for disabled buttons */
+    color: #6c757d;                 /* Grey text color */
+    cursor: not-allowed;            /* Change cursor to indicate disabled state */
+    opacity: 0.65;                  /* Slightly transparent */
+}
+/* Button Styles End */
+
+.wlgf-container .range-value-display {
+    width: 25%;
+    padding: 6px;            /* Padding for input fields */
+    margin: 10px 0 0px 0;    /* Margin above and below fields for spacing */
+    border: 1px solid #ccc;   /* Light border */
+}
+
+.wlgf-container .wlgf-spinner {
+    display: none;
+}
+
+.wlgf-container .wlgf-response-output {
+    margin: 20px 0 20px 0;
+}

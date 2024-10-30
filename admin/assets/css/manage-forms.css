@@ -1,0 +1,9 @@
+.row { --bs-gutter-x: 0rem !important; }
+#forms-tables_info, #forms-tables_length {
+	float: left;
+}
+
+/* table first coloum label was on right */
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+     text-align: left !important;
+}

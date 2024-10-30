@@ -1,0 +1,8 @@
+#forms-tables_info, #forms-tables_length {
+	float: left;
+}
+
+/* required astrick fix after field label*/
+.form-wrap.form-builder .frmb li.form-field .field-label {
+    display: inline !important;
+}
